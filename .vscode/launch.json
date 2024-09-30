@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch MontyHallGame",
+            "request": "launch",
+            "mainClass": "com.example.montyhall.MontyHallGame",
+            "classPaths": [
+                "${workspaceFolder}/lib/junit-jupiter-api-5.9.2.jar",
+                "${workspaceFolder}/lib/junit-platform-console-1.8.0.jar"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Run MontyHallGame Tests",
+            "request": "launch",
+            "mainClass": "org.junit.platform.console.ConsoleLauncher",
+            "args": [
+                "--classpath", "${workspaceFolder}/bin",
+                "--scan-classpath"
+            ]
+        }
+    ]
+}
